@@ -50,7 +50,8 @@ nav {
   border: 1px solid rgba(11, 5, 0, 0.2);
   font-weight: 100 !important;
   border-radius: 50px;
-  padding: 10px 20px;
+  /* padding: 10px 20px; */
+  padding: 0.625em 1.5em;
   font-size: 18px;
   position: relative;
   transition: all ease 0.25s;
@@ -83,7 +84,7 @@ nav {
 
 #center {
   width: 100%;
-  height: 65vh;
+  height: 83vh;
   /* background-color: orange; */
   display: flex;
   justify-content: space-between;
@@ -99,12 +100,18 @@ nav {
 }
 
 #right h1 {
-  font-size: 10vw;
-  line-height: 8vw;
+  /* font-size: 10vw; */
+  font-size: 10em;
+  /* line-height: 8vw; */
+  line-height: 0.8;
+  letter-spacing: -0.03em;
   text-align: right;
+  margin-bottom: 20px;
+  padding-right: 2vw;
 }
 
 #page1 video {
+  position: relative;
   width: 100%;
   border-radius: 30px;
   margin-top: 4vw;
@@ -113,11 +120,55 @@ nav {
 #hero-shape {
   width: 46vw;
   height: 36vw;
-  background-color: #fe350b;
   position: absolute;
-  /* border-radius: 50%; */
-  border-top-left-radius: 50%;
   right: 0;
-  top: 65vh;
-  /* filter: blur(20px); */
+  top: 85vh;
+}
+
+#hero-1 {
+  width: 100%;
+  height: 100%;
+  background-color: #fe350b;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  filter: blur(10px);
+  position: absolute;
+}
+
+#hero-2 {
+  width: 30vw;
+  height: 30vw;
+  background: linear-gradient(#fe350b, #fe400b);
+  border-radius: 50%;
+  position: absolute;
+  filter: blur(25px);
+  animation: animation-2 2s linear infinite alternate;
+}
+
+#hero-3 {
+  background: linear-gradient(#fe350b, #fe400b);
+  width: 30vw;
+  height: 30vw;
+  border-radius: 50%;
+  position: absolute;
+  filter: blur(25px);
+  animation: animation-1 2s linear infinite alternate;
+}
+
+@keyframes animation-1 {
+  from {
+    transform: translate(55%, -3%);
+  }
+  to {
+    transform: translate(0%, 10%);
+  }
+}
+
+@keyframes animation-2 {
+  from {
+    transform: translate(5%, -5%);
+  }
+  to {
+    transform: translate(-20%, 30%);
+  }
 }
