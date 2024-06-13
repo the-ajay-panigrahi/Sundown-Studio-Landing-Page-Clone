@@ -27,6 +27,7 @@ body {
   background-color: #efeae3;
   position: relative;
   padding: 0 2vw;
+  overflow: hidden;
 }
 
 nav {
@@ -119,10 +120,10 @@ nav {
 
 #hero-shape {
   width: 46vw;
-  height: 36vw;
+  height: 32vw;
   position: absolute;
   right: 0;
-  top: 85vh;
+  top: 87vh;
 }
 
 #hero-1 {
@@ -142,7 +143,7 @@ nav {
   border-radius: 50%;
   position: absolute;
   filter: blur(25px);
-  animation: animation-2 2s linear infinite alternate;
+  animation: animation-2 2.75s linear infinite alternate;
 }
 
 #hero-3 {
@@ -152,21 +153,21 @@ nav {
   border-radius: 50%;
   position: absolute;
   filter: blur(25px);
-  animation: animation-1 2s linear infinite alternate;
+  animation: animation-1 2.75s linear infinite alternate;
 }
 
 @keyframes animation-1 {
   from {
-    transform: translate(55%, -3%);
+    transform: translate(63%, -3%);
   }
   to {
-    transform: translate(0%, 10%);
+    transform: translate(100%, -12%);
   }
 }
 
 @keyframes animation-2 {
   from {
-    transform: translate(5%, -5%);
+    transform: translate(5%, -10%);
   }
   to {
     transform: translate(-20%, 30%);
