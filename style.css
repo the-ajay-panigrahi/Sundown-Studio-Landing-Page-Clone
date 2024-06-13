@@ -173,3 +173,51 @@ nav {
     transform: translate(-20%, 30%);
   }
 }
+
+#page2 {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #efeae3;
+  padding: 8vw 0;
+}
+
+#moving-text {
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+#moving-text::-webkit-scrollbar {
+  display: none;
+}
+
+.con {
+  display: inline-block;
+  white-space: nowrap;
+  animation: move 10s linear infinite;
+  /* animation: move 2s linear  iteration-count direction fill-mode; */
+}
+
+#moving-text h1 {
+  /* margin-bottom: 10px; */
+  /* background-color: blue; */
+  font-size: 9vw;
+  display: inline-block;
+}
+
+.circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #fe350b;
+  display: inline-block;
+  margin: 1vw 2vw;
+}
+
+@keyframes move {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
