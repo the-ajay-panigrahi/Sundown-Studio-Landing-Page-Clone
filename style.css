@@ -303,11 +303,34 @@ nav {
   }
 }
 
+#featured {
+  position: absolute;
+  left: 33px;
+  bottom: -115px;
+  letter-spacing: 0.6px;
+  font-size: 0.875em;
+  font-weight: 200;
+  line-height: 1.2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0b0500;
+}
+
+#featured span {
+  display: inline-block;
+  background-color: #fe350b;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  margin-bottom: 2px;
+}
+
 #page3 {
   width: 100%;
   min-height: 100vh;
   background-color: #efeae3;
-  padding-top: 11vw;
+  padding-top: 12vw;
   padding-bottom: 4vw;
 }
 
