@@ -34,6 +34,12 @@ body {
   height: 100%;
 }
 
+#main {
+  /* background-color: #0b0500; */
+  position: relative;
+  z-index: 10;
+}
+
 #page1 {
   width: 100%;
   min-height: 100vh;
@@ -407,4 +413,33 @@ nav {
 
 .elem:hover .overlay {
   top: 0;
+}
+
+#page4 {
+  width: 100%;
+  height: 60vh;
+  background-color: #efeae3;
+}
+
+#page5 {
+  width: 100%;
+  height: 100vh;
+  /* background-color: #efeae3; */
+}
+
+#footer {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  bottom: 0;
+  z-index: 9;
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+#footer h1 {
+  font-size: 23vw;
 }
