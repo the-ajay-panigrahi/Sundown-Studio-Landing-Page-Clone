@@ -1,10 +1,17 @@
 @font-face {
-  font-family: "Neu Mediu ";
+  font-family: neu;
   src: url(./assets/font/NeueHaasDisplayMediu.ttf);
 }
 
 @font-face {
-  font-family: "Neu Roman";
+  font-family: neu;
+  font-weight: 100;
+  src: url(./assets/font/NeueHaasDisplayLight.ttf);
+}
+
+@font-face {
+  font-family: neu;
+  font-weight: 200;
   src: url(./assets/font/NeueHaasDisplayRoman.ttf);
 }
 
@@ -12,7 +19,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Neu Mediu ", sans-serif;
+  font-family: "neu", sans-serif;
 }
 
 html,
@@ -42,22 +49,21 @@ nav {
 #nav-right {
   display: flex;
   justify-content: center;
-  gap: 1vw;
+  gap: 0.5vw;
 }
 
 #nav-right a {
   color: #0b0500;
   text-decoration: none;
   border: 1px solid rgba(11, 5, 0, 0.2);
-  font-weight: 100 !important;
+  font-weight: 200;
   border-radius: 50px;
-  /* padding: 10px 20px; */
-  padding: 0.625em 1.5em;
+  padding: 11px 23px;
+  /* padding: 0.625em 1.5em; */
   font-size: 18px;
   position: relative;
   transition: all ease 0.25s;
   overflow: hidden;
-  font-family: "Neu Roman";
 }
 
 #nav-right a::after {
@@ -179,6 +185,7 @@ nav {
   min-height: 100vh;
   background-color: #efeae3;
   padding: 8vw 0;
+  position: relative;
 }
 
 #moving-text {
@@ -220,4 +227,78 @@ nav {
   to {
     transform: translateX(-100%);
   }
+}
+
+#page2-bottom {
+  width: 100%;
+  height: 80vh;
+  /* background-color: aqua; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4.5vw 6vw;
+  z-index: 2;
+  position: relative;
+  margin-top: 5vw;
+}
+
+#page2-bottom h1 {
+  /* font-size: 4vw; */
+  font-size: 4.4em;
+  width: 67%;
+  /* line-height: 4vw; */
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+#bottom-part2 {
+  width: 22.5%;
+  margin-top: 18vw;
+}
+
+#bottom-part2 img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+#bottom-part2 p {
+  font-weight: 200;
+  margin-top: 3vw;
+  /* font-size: 1vw; */
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+#page2 #gooey {
+  /* width: 32vw; */
+  width: 34em;
+  /* height: 32vw; */
+  height: 34em;
+  position: absolute;
+  border-radius: 50%;
+  background: linear-gradient(to top right, #ff1900, #ff5a01);
+  top: 58%;
+  left: 25%;
+
+  animation: gooey 6s ease-in-out infinite alternate;
+  /* animation: gooey duration timing-function delay iteration-count direction
+    fill-mode; */
+}
+
+@keyframes gooey {
+  from {
+    transform: translate(10%, -10%) skew(0);
+    filter: blur(20px);
+  }
+  to {
+    filter: blur(30px);
+    transform: translate(-10%, 10%) skew(-12deg);
+  }
+}
+
+#page3 {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #efeae3;
+  background-color: #ff9500;
 }
