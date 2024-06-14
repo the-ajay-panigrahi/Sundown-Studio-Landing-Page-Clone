@@ -311,6 +311,25 @@ nav {
   padding-bottom: 4vw;
 }
 
+#elem-container {
+  /* background-color: red; */
+  cursor: pointer;
+}
+
+#fixed-image {
+  width: 24vw;
+  height: 30vw;
+  border-radius: 10px;
+  position: fixed;
+  z-index: 3;
+  left: 50%;
+  top: 25%;
+  display: none;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
 .elem {
   height: 123px;
   width: 100%;
@@ -361,7 +380,6 @@ nav {
   top: -100%;
   left: 0;
   transition: all ease 0.25s;
-  cursor: pointer;
 }
 
 .elem:hover .overlay {

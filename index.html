@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+    <div id="fixed-image"></div>
     <div id="main">
       <div id="page1">
         <nav>
@@ -93,49 +94,52 @@
         <div id="gooey"></div>
       </div>
       <div id="page3">
-        <div class="elem">
-          <div class="overlay"></div>
-          <h2>Converse SoHo</h2>
-          <div class="elem-right">CONVERSE<br /><span>Environment</span></div>
-        </div>
-
-        <div class="elem">
-          <div class="overlay"></div>
-          <h2>NYFW Popup</h2>
-          <div class="elem-right">AFTERPAY <br /><span>Experiential</span></div>
-        </div>
-        <div class="elem">
-          <div class="overlay"></div>
-          <h2>50th Anniversary</h2>
-          <div class="elem-right">NIKE <br /><span>Environment</span></div>
-        </div>
-        <div class="elem">
-          <div class="overlay"></div>
-          <h2>Kelce Super Bowl Party</h2>
-          <div class="elem-right">
-            WAVE SPORTS ENTERTAINMENT <br /><span>Experiential</span>
+        <div id="elem-container">
+          <div class="elem" data-video="./assets/videos/element-video-1.mp4">
+            <div class="overlay"></div>
+            <h2>Converse SoHo</h2>
+            <div class="elem-right">CONVERSE<br /><span>Environment</span></div>
           </div>
-        </div>
-        <div class="elem">
-          <div class="overlay"></div>
-          <h2>Makers Studio HOI</h2>
-          <div class="elem-right">NIKE <br /><span>Experiential</span></div>
-        </div>
-        <div class="elem">
-          <div class="overlay"></div>
-          <h2>Play New Kidvision</h2>
-          <div class="elem-right">NIKE <br /><span>Environment</span></div>
-        </div>
-        <div class="elem">
-          <div class="overlay"></div>
-          <h2>Capezio NYC Flagship</h2>
-          <div class="elem-right">CAPEZIO <br /><span>Environment</span></div>
-        </div>
-        <div class="elem">
-          <div class="overlay"></div>
-          <h2>Carmelo Anthony 7pm In Brooklyn Set</h2>
-          <div class="elem-right">
-            WAVE SPORTS ENTERTAINMENT<br /><span>Environment</span>
+          <div class="elem" data-video="./assets/videos/element-video-2.mp4">
+            <div class="overlay"></div>
+            <h2>NYFW Popup</h2>
+            <div class="elem-right">
+              AFTERPAY <br /><span>Experiential</span>
+            </div>
+          </div>
+          <div class="elem" data-image="./assets/images/element-image-3.webp">
+            <div class="overlay"></div>
+            <h2>50th Anniversary</h2>
+            <div class="elem-right">NIKE <br /><span>Environment</span></div>
+          </div>
+          <div class="elem" data-video="./assets/videos/element-video-4.mp4">
+            <div class="overlay"></div>
+            <h2>Kelce Super Bowl Party</h2>
+            <div class="elem-right">
+              WAVE SPORTS ENTERTAINMENT <br /><span>Experiential</span>
+            </div>
+          </div>
+          <div class="elem" data-image="./assets/images/element-image-5.webp">
+            <div class="overlay"></div>
+            <h2>Makers Studio HOI</h2>
+            <div class="elem-right">NIKE <br /><span>Experiential</span></div>
+          </div>
+          <div class="elem" data-video="./assets/videos/element-video-6.mp4">
+            <div class="overlay"></div>
+            <h2>Play New Kidvision</h2>
+            <div class="elem-right">NIKE <br /><span>Environment</span></div>
+          </div>
+          <div class="elem" data-video="./assets/videos/element-video-7.mp4">
+            <div class="overlay"></div>
+            <h2>Capezio NYC Flagship</h2>
+            <div class="elem-right">CAPEZIO <br /><span>Environment</span></div>
+          </div>
+          <div class="elem" data-video="./assets/videos/element-video-8.mp4">
+            <div class="overlay"></div>
+            <h2>Carmelo Anthony 7pm In Brooklyn Set</h2>
+            <div class="elem-right">
+              WAVE SPORTS ENTERTAINMENT<br /><span>Environment</span>
+            </div>
           </div>
         </div>
       </div>
@@ -153,6 +157,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <!-- <script src="./script.js"></script> -->
+    <script src="./script.js"></script>
   </body>
 </html>
