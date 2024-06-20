@@ -56,6 +56,34 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  z-index: 200;
+}
+
+nav #menu {
+  display: none;
+  border: 1px solid #00000033;
+  border-radius: 50px;
+  padding: 3vw 5vw;
+  font-size: 4vw;
+  font-weight: 200;
+}
+nav #menu > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  transition: all ease-in-out 0.3s;
+}
+nav #menu > div #open {
+  width: 24px;
+  height: 15px;
+  transition: all ease-in-out 0.3s;
+}
+nav #menu > div #close {
+  height: 13px;
+  display: none;
+  transition: all ease-in-out 0.3s;
 }
 
 #nav-right {
@@ -99,6 +127,44 @@ nav {
 #nav-right a:hover {
   color: #ffffff;
   z-index: 1;
+}
+
+#full-screen {
+  width: 100%;
+  height: 100vh;
+  background-color: #00000066;
+  position: fixed;
+  z-index: 101;
+  top: -100%;
+  transition: all ease 0.5s;
+}
+
+#full-div1 {
+  width: 100%;
+  height: 50%;
+  background-color: #efeae3;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  padding-right: 5vw;
+  padding-bottom: 2vw;
+}
+
+#full-div1 a {
+  font-size: 15vw;
+  color: #0b0500;
+  letter-spacing: -5px;
+  font-family: sans-serif;
+  font-weight: 600;
+  line-height: 1.1;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+#full-div1 #contact {
+  margin-bottom: 32px;
 }
 
 #center {
@@ -198,6 +264,7 @@ nav {
   background-color: #efeae3;
   padding: 8vw 0;
   position: relative;
+  overflow: hidden;
   /* padding-bottom: 22vw; */
 }
 
@@ -717,5 +784,35 @@ nav {
   }
   to {
     transform: translate(60%, 0%) skew(-10deg, -10deg);
+  }
+}
+
+/* * {
+  overflow-x: hidden;
+} */
+
+@media (max-width: 600px) {
+  #page1 {
+    width: 100vw;
+    min-height: 100vh;
+    padding: 0;
+  }
+
+  nav {
+    padding: 8vw 5vw;
+    background-color: #efeae3;
+  }
+
+  nav img {
+    height: 9vh;
+    transition: all ease 0.2s;
+  }
+
+  #nav-right {
+    display: none;
+  }
+
+  nav #menu {
+    display: block;
   }
 }
