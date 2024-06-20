@@ -815,4 +815,229 @@ nav #menu > div #close {
   nav #menu {
     display: block;
   }
+
+  #center {
+    height: 65vh;
+    /* background-color: orange; */
+    padding: 7vw 5vw;
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  #left h3 {
+    /* font-family: sans-serif; */
+    width: 85%;
+    font-size: 5.8vw;
+    line-height: 6vw;
+    letter-spacing: -1px;
+    font-weight: 500;
+  }
+
+  #right h1 {
+    font-size: 16.5vw;
+    line-height: 0.8;
+    font-family: sans-serif;
+    letter-spacing: -4px;
+    text-align: right;
+    margin-bottom: 20px;
+    padding-right: 2vw;
+  }
+
+  #page1 video {
+    position: relative;
+    width: 92%;
+    margin-top: 7vw;
+    border-radius: 15px;
+    border-radius: 30px;
+    margin-left: 4%;
+    height: 70vh;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  #hero-shape {
+    width: 75vw;
+    height: 92vw;
+    right: -7px;
+    top: 75vh;
+  }
+
+  #hero-1 {
+    width: 100%;
+    height: 100%;
+    background-color: #fe350b;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    filter: blur(10px);
+    position: absolute;
+  }
+
+  #hero-2 {
+    width: 75vw;
+    height: 92vw;
+    background: linear-gradient(#fe350b, #fe400b);
+    border-radius: 50%;
+    position: absolute;
+    filter: blur(25px);
+    animation: animation-2 6s linear infinite alternate;
+  }
+
+  #hero-3 {
+    background: linear-gradient(#fe350b, #fe400b);
+    width: 75vw;
+    height: 92vw;
+    border-radius: 50%;
+    position: absolute;
+    filter: blur(25px);
+    animation: animation-1 2.75s linear infinite alternate;
+  }
+
+  @keyframes animation-2 {
+    from {
+      transform: translate(5%, -10%);
+    }
+    to {
+      transform: translate(-7%, 10%);
+    }
+  }
+
+  #page2 {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #efeae3;
+    padding: 8vw 0;
+    position: relative;
+    overflow: hidden;
+    /* padding-bottom: 22vw; */
+    padding-bottom: 0;
+  }
+
+  #moving-text {
+    white-space: nowrap;
+    overflow-x: auto;
+  }
+
+  #moving-text::-webkit-scrollbar {
+    display: none;
+  }
+
+  .con {
+    display: inline-block;
+    white-space: nowrap;
+    animation: move 10s linear infinite;
+    /* animation: move 2s linear  iteration-count direction fill-mode; */
+  }
+
+  #moving-text h1 {
+    /* margin-bottom: 10px; */
+    /* background-color: blue; */
+    font-size: 14vw;
+    display: inline-block;
+  }
+
+  .circle {
+    border-radius: 50%;
+    background-color: #fe350b;
+    display: inline-block;
+
+    margin: 2vw 2vw;
+    width: 25px;
+    height: 25px;
+  }
+
+  @keyframes move {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  #page2-bottom {
+    width: 100%;
+    height: 100vh;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: start;
+    padding: 4.5vw 6vw;
+    z-index: 2;
+    position: relative;
+    margin-top: 5vw;
+
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #page2-bottom h1 {
+    font-size: 3.6vh;
+    width: 100%;
+    line-height: 1.2;
+    letter-spacing: 0px;
+    scale: 1.07;
+    padding-inline: 4.1px;
+  }
+
+  #bottom-part2 {
+    width: 80%;
+    margin-top: 18vw;
+  }
+
+  #bottom-part2 img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  #bottom-part2 p {
+    font-weight: 200;
+    margin-top: 3vw;
+    font-size: 3.8vw;
+    line-height: 1.4;
+  }
+
+  #page2 #gooey {
+    width: 85vw;
+    height: 80vw;
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(to top right, #ff1900, #ff5a01);
+    top: 31%;
+    left: 25%;
+    animation: gooey 6s ease-in-out infinite alternate;
+  }
+
+  @keyframes gooey {
+    from {
+      transform: translate(10%, -10%) skew(0);
+      filter: blur(20px);
+    }
+    to {
+      filter: blur(30px);
+      transform: translate(-10%, 10%) skew(-12deg);
+    }
+  }
+
+  #featured {
+    position: absolute;
+    left: 33px;
+    bottom: -115px;
+    letter-spacing: 0.6px;
+    font-size: 0.875em;
+    font-weight: 200;
+    line-height: 1.2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0b0500;
+  }
+
+  #featured span {
+    display: inline-block;
+    background-color: #fe350b;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    margin-bottom: 2px;
+  }
 }
