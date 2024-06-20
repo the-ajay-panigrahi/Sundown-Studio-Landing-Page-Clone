@@ -264,7 +264,7 @@ nav #menu > div #close {
   background-color: #efeae3;
   padding: 8vw 0;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
   /* padding-bottom: 22vw; */
 }
 
@@ -1025,7 +1025,7 @@ nav #menu > div #close {
   #featured {
     position: absolute;
     left: 33px;
-    bottom: -115px;
+    bottom: 0;
     letter-spacing: 0.6px;
     font-size: 0.875em;
     font-weight: 200;
@@ -1033,6 +1033,8 @@ nav #menu > div #close {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* background-color: green; */
+    z-index: 110;
     color: #0b0500;
   }
 
@@ -1116,5 +1118,77 @@ nav #menu > div #close {
 
   .elem-text span {
     color: #00000066;
+  }
+
+  #page4 {
+    width: 100%;
+    min-height: 50vh;
+    background-color: #efeae3;
+    padding: 8vw 2vw;
+    padding-top: 30vw;
+    position: relative;
+    margin-top: -62px;
+  }
+
+  #work {
+    position: absolute;
+    left: 30px;
+    top: 50px;
+    letter-spacing: 0.6px;
+    font-size: 0.875em;
+    font-weight: 200;
+    line-height: 1.2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0b0500;
+  }
+
+  #work span {
+    display: inline-block;
+    background-color: #fe350b;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    margin-bottom: 2px;
+  }
+
+  .swiper {
+    width: 100%;
+    min-height: 230px;
+  }
+
+  .swiper-wrapper {
+    width: 100%;
+  }
+
+  .swiper-slide {
+    width: 80%;
+    min-height: 100%;
+    border-left: 1px solid #00000033;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* justify-content: space-between; */
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 0 0 0 5vw;
+    gap: 17px;
+    /* margin-right: 20px !important; */
+  }
+
+  .swiper-slide .img-div {
+    width: 163px;
+  }
+
+  .swiper-slide .img-div img {
+    max-width: 100%;
+  }
+
+  .swiper-slide .text {
+    color: #0b0500;
+    font-family: sans-serif;
+    font-size: 1em;
+    font-weight: 200;
+    line-height: 1.4;
   }
 }
