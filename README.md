@@ -1,11 +1,12 @@
-# Sundown Studio Landing Page Clone
+# Sundown Studio Landing Page UI Clone
 
-Pixel-perfect recreation of the Sundown Studio landing page in HTML, CSS, and JS.
+A UI clone of the Sundown Studio landing page using **HTML**, **CSS**, and **JavaScript**.
 
-**Just remember (but don't take this too seriously😉) :**
+This project uses **Locomotive Scroll** for smooth scrolling and **Swiper JS** for responsive sliders.
+
+**Just remember (but don't take this too seriously😉):**
 > "If at first, you don’t succeed, call it version 1.0." - Anonymous
 
 Feel free to explore and use anything you find helpful.
 
 Happy coding!
-
