@@ -70,6 +70,7 @@ menu.addEventListener("click", () => {
   if (flag === false) {
     fullScreen.style.top = 0;
     navImg.style.opacity = 0;
+    fullScreen.style.zIndex = 101;
     nav.style.paddingTop = "4vw";
     nav.style.paddingBottom = "4vw";
     nav.style.borderBottom = "1px";
@@ -82,6 +83,7 @@ menu.addEventListener("click", () => {
   } else {
     fullScreen.style.top = "-100%";
     navImg.style.opacity = 1;
+    fullScreen.style.zIndex = -1000;
     nav.style.paddingTop = "8vw";
     nav.style.paddingBottom = "8vw";
     nav.style.borderBottom = 0;
