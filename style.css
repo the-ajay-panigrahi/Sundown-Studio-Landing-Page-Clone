@@ -791,6 +791,10 @@ nav #menu > div #close {
   overflow-x: hidden;
 } */
 
+#elem-container-phone {
+  display: none;
+}
+
 @media (max-width: 600px) {
   #page1 {
     width: 100vw;
@@ -1039,5 +1043,78 @@ nav #menu > div #close {
     height: 9px;
     border-radius: 50%;
     margin-bottom: 2px;
+  }
+
+  #elem-container {
+    display: none;
+  }
+
+  #elem-container-phone {
+    display: block;
+    padding-inline: 7vw;
+  }
+
+  #elem-container-phone .individualContainer #media {
+    width: 100%;
+    height: 65vh;
+    position: relative;
+
+    /* overflow: hidden; */
+  }
+
+  .individualContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 60px;
+  }
+
+  #elem-container-phone video {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px;
+  }
+
+  #elem-container-phone img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px;
+  }
+
+  .elem-bottom-phone h2 {
+    font-size: 7.5vw;
+    font-family: sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -1.5px;
+    word-spacing: -1px;
+    position: relative;
+    z-index: 1;
+    color: #0b0500;
+  }
+
+  .elem-text {
+    position: relative;
+    z-index: 1;
+    letter-spacing: 0.02em;
+    font-weight: 200;
+    font-size: 0.875em;
+    line-height: 1.2;
+    color: #0b0500;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    margin-left: 3px;
+    margin-top: 10px;
+  }
+
+  .elem-text span {
+    color: #00000066;
   }
 }
